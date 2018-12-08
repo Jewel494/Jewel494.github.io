@@ -48,6 +48,17 @@
       
       
    }
+   
+ .mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+   
+  
     /*Navigation Bar*/
     .topnav {
       overflow: hidden;
@@ -78,7 +89,15 @@
         background-color: #B0C4DE;
         color: #f2f2f2;
         transition: background-color 1.0s ease;
-    }
+   }
+   
+ .topnav #myLinks {
+  display: none;
+}
+   .active {
+   background-color: #b3b3cc;
+      
+   }
     ul {
     list-style-type: none;
     margin: 0;
@@ -318,8 +337,21 @@ position: relative;
    </div>
 </head>
 <body>
-
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+<!-- Naviagation Bar -->
 <div class="topnav">
+    <a href="#home" class="active"></a>
+   <div id="myLinks">
+    <a href="#about">About</a>
+    <a href="#links">Links</a>
+    <a href="#blog">Blog</a>
+  </div>
+    </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 <ul>
   <li><a href="index.html">Home</a></li>
   <li><a href="indexone.html">About</a></li>
@@ -377,7 +409,14 @@ position: relative;
 </div>
 
 <script>
-
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 </script>
 
 </body>
