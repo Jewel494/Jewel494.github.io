@@ -1,4 +1,409 @@
+
 <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Save Cats</title>
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Andika" rel="stylesheet">
+<style>
+* {box-sizing: border-box;
+   
+}
+  body {
+        /*padding-bottom: 10px;*/
+       /* padding-right: 3px;
+        padding-left: 3px;*/
+       /* padding-top: 0px;*/
+        background-color: #dfebec;
+        margin: 0;
+      }
+    h1 {
+      padding: 25px;
+      padding-top: 17px;
+      padding-bottom: 17px;
+     /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+     font-family: 'Titillium Web', sans-serif;
+      font-size: 55px;
+      
+      background-color: #F0F8FF; 
+      margin-top: 0;
+      margin-bottom: 0;
+      text-align: left;
+    }
+   
+   .tophead a {
+       /* padding: 25px;
+      padding-top: 17px;
+      padding-bottom: 17px;*/
+     /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+     font-family: 'Titillium Web', sans-serif;
+      font-size: 55px;
+      
+      background-color: #F0F8FF; 
+      margin-top: 0;
+      margin-bottom: 0;
+      text-align: left;
+      color: black;
+      text-decoration: none;
+      
+      
+   }
+   
+ .mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+   
+  
+    /*Navigation Bar*/
+    .topnav {
+      overflow: hidden;
+      background-color: #b3b3cc;
+     /* border-top: 1px solid black;
+      border-bottom: 1px solid black;*/
+      width: 100%;
+      margin: 0;
+      transition: background-color 1.0s ease;
+     
+      }
+      
+    .topnav a  {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+        text-align: center;
+        padding: 16px;
+        padding-left: 35px;
+        padding-right: 35px;
+        text-decoration: none;
+       
+        
+      }
+      
+    .topnav a:hover {
+        background-color: #B0C4DE;
+        color: #f2f2f2;
+        transition: background-color 1.0s ease;
+   }
+   
+ .topnav #myLinks {
+  display: none;
+}
+   
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+   .active {
+   background-color: #b3b3cc;
+   color: white;
+      
+   }
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: left;
+    border-right: 1px solid black;
+}
+  /*End Styling for Nav Bar*/
+    /*First Paragraph*/
+    .unoimage {
+      background-color: #E0FFFF;
+    background-repeat: no-repeat;
+ background-size: cover;
+ position: relative;
+ background-position: center;
+ text-align: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      margin-top: 20px;
+      /*box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.15), 0px 5px 8px 0px rgba(0, 0, 0, 0.15);*/
+    }
+   .textuno {
+   font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+      line-height: 1.8;
+      font-size: 19px;
+      postion: absolute;
+      padding-left: 30px;
+      padding-right: 30px;
+      
+   
+   }
+    p {
+      
+    }
+    
+  .btwnimage {
+  background: linear-gradient(to bottom, #ccccff 100%, #ffffff -13%);
+ /* background-image: url("https://usyaka.files.wordpress.com/2013/12/a_cat_that_rolls.jpg");*/
+  height: 550px;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 100% 100%;
+  }
+  
+  .twobtwnimage {
+  background: linear-gradient(to bottom, #003399 0%, #33ccff 100%);
+   height: 550px;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 100% 100%;
+  
+  }
+  
+   .threebtwnimage {
+   background: linear-gradient(to bottom, #669999 0%, #99ffcc 100%);
+   height: 550px;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 100% 100%;
+   
+  }
+  
+.miSlides {display: none}
+img {vertical-align: middle;}
+.textbtwn {
+text-align: center;
+padding-top: 45px;
+font-size: 40px;
+font-weight: bold;
+color: white;
+font-family: 'Andika', sans-serif;
+}
+.align {
+display: block;
+margin-left: 48%;
+margin-right: 50%;
+text-align: center;
+width: 12%;
+}
+.atext {
+text-align: center;
+padding-top: 40px;
+padding-left: 30px;
+padding-right: 30px;
+font-size: 19px;
+color: #737373;
+font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+font-weight: lighter;
+line-height: 1.8;
+}
+.atext:hover {
+color: black;
+transition-duration: 2s;
+}
+.twotextbtwn {
+text-align: center;
+padding-top: 45px;
+font-size: 40px;
+font-weight: bold;
+color: white;
+font-family: 'Andika', sans-serif;
+}
+.atexttwo {
+text-align: center;
+padding-top: 40px;
+padding-left: 30px;
+padding-right: 30px;
+font-size: 19px;
+color: #737373;
+font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+font-weight: lighter;
+line-height: 1.8;
+}
+.atexttwo:hover {
+color: black;
+transition-duration: 2s;
+}
+.threetextbtwn {
+text-align: center;
+padding-top: 45px;
+font-size: 40px;
+font-weight: bold;
+color: white;
+font-family: 'Andika', sans-serif;
+}
+.atextthree {
+text-align: center;
+padding-top: 40px;
+padding-left: 30px;
+padding-right: 30px;
+padding-bottom: 50px;
+font-size: 19px;
+color: #737373;
+font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+font-weight: lighter;
+line-height: 1.8;
+}
+.atextthree:hover {
+color: black;
+transition-duration: 2s;
+}
+/*
+.oneinimage {
+background-image: url("http://theplaceberlin.com/wp-content/uploads/2017/04/1200px-Heart_coraz%C3%B3n.svg_.png");
+height: 200px;
+width: 200px;
+position: relative;
+}*/
+/*2nd Paragraph*/
+.dosimage {
+  background-color: #E0FFFF;
+  background-repeat: no-repeat;
+ background-size: cover;
+ position: relative;
+ text-align: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      
+      /*horizontal offset, vertical offset, blur radius, spread radius*/
+      /*box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.15), 0px 5px 8px 0px rgba(0, 0, 0, 0.15);*/
+      
+    }
+.textdos {
+ font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+ line-height: 1.8;
+ font-size: 19px;
+     padding-left: 3px;
+     padding-right: 3px;
+     color: black;
+     font-weight: normal;
+      
+ 
+}
+   p1 {
+  
+   }
+.footer {
+    padding: 20px;
+    text-align: center;
+    background:  #F0F8FF;
+    margin-top: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* Fading Animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+</style>
+ <div class="tophead">
+   <h1><a href="index.html">Save Cats</a></h1>
+   </div>
+</head>
+<body>
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+<!-- Naviagation Bar -->
+<div class="topnav">
+    <a href="#home" class="active"></a>
+   <div id="myLinks">
+    <a href="#about">About</a>
+    <a href="#links">Links</a>
+    <a href="#blog">Blog</a>
+  </div>
+    </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="indexone.html">About</a></li>
+   <li><a href="indextwo.html">Links</a></li>
+   <li><a href="indexthree.html">Blog</a></li>
+    </ul>
+  </div>
+  
+
+ <div class="unoimage">
+    <div class="textuno"><p>This site strives to help cats in need by promoting people to be better and kinder to cats. Our core values here at Save Cats are kindesss, caring, and appreciation for our cats.</p></div>
+      </div>
+     
+      <div class="btwnimage">
+      <div class="textbtwn">
+      <div class = "oneinimage">
+      
+      </div><p>Kindness</p>
+      
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Drawn_heart.svg/1197px-Drawn_heart.svg.png" alt="heart"style="width:50px;height:60px;"class="align"> 
+     <div class = "atext">
+       <p> Kindness is essential everywhere, especially when helping cats. Being kind to a cat by simply feeding the cat or rescuing it can have a tremendous impact on their well-being. At Save Cats, it is our mission to help cats in anyway possible, and that is why we believe in the power of kindness.</p>
+       </div>
+      </div>
+     
+      </div>
+      
+     
+      <div class = "twobtwnimage">
+      <div class = "twotextbtwn" >
+      <div class = "twoinimage" >
+      </div>
+      <p>Caring</p>
+      
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Whiskas_cat%27s_petfood_with_chicken_dry.jpg" alt = "cat food care" style="width:180px;height:120px;">
+      <div class="atexttwo">
+      <p>It is our priority to make sure cats are taken care of to the greatest lengths possible. That is why we link to only the best animal rescues and organizations and make sure cats only receive the best treatment. After all, a well-cared cat will be a happy cat. </p>
+      </div>
+      </div>
+      </div>
+        <div class = "threebtwnimage">
+      <div class = "threetextbtwn" >
+      <div class = "threeinimage" >
+      </div>
+      <p>Appreciation</p>
+      <img src="https://www.publicdomainpictures.net/pictures/250000/nahled/cat-toys.jpg" alt="two cats"style="width:200px;height:130px;">
+      <div class="atextthree">
+      <p>Appreciating our cats is not something to be forgotten and isn't forgotten by us. Here we love our cats and all appreciate everything that they bring to us, from fun memories to comfort to their very presence.</p>
+      <div>
+      </div>
+      </div>
+  <div class="dosimage">
+  <div class="textdos"><p1>There are many helpful links to cat charaties and rescues under the links tab. Feel free to check out the blog as well.</p1>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+<div class="footer">
+  <h2></h2>
+</div>
+
+</html> 
+<!--<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -352,10 +757,10 @@ position: relative;
    </div>
 </head>
 <body>
-<!-- Simulate a smartphone / tablet -->
-<div class="mobile-container">
+<!-- Simulate a smartphone / tablet -->-->
+<!--<div class="mobile-container">-->
 <!-- Naviagation Bar -->
-<div class="topnav">
+<!--<div class="topnav">
     <a href="#home" class="active">Home</a>
    <div id="myLinks">
     <a href="#about">About</a>
@@ -440,4 +845,4 @@ function myFunction() {
   <h2></h2>
 </div>
 
-</html> 
+</html> -->
